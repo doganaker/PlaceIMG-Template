@@ -10,16 +10,39 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!-- Navbar Start -->
     <nav class="nav">
         <div class="nav__wrap">
-            <h1>PlaceIMG</h1>
+            <h1><strong>PlaceIMG</strong></h1>
             <div class="stats">
                 <div class="stats__alltime">
-                    <h3>Hundreds of millions of images served.</h3>
+                    <h3><strong>Hundreds of millions of images served.</strong></h3>
                 </div>
             </div>
         </div>
-        
     </nav>
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    <header class="header">
+        <!-- Input Area -->
+        <div class="header__input">
+            <input id="link-input" type="url" value="https://placeimg.com/640/480/any" readonly class="animated flipInX">
+        </div>
+    </header>
+    <!-- Header End -->
+    <section class="section section--controls">
+        <div class="section__wrap">
+            <ul class="controls">
+                <li>
+                    <small>Width (px)</small>
+                    <input class="controls__item" id="image_width" type="text" placeholder="640">
+                </li>
+                <li>
+                    <small>Heigth (px)</small>
+                    <input class="controls__item" id="image_heigth" type="text" placeholder="480">
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>

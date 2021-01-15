@@ -14,9 +14,7 @@ body{
     margin-right: auto;
     max-width: 1000px;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -32,7 +30,6 @@ body{
 
 .stats{
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     box-sizing: inherit;
 }
@@ -50,4 +47,101 @@ body{
     padding: 20px 0 20px 50px;
     border-left: 1px solid #eee;
     box-sizing: inherit;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #eee;
+    background: #1A3547;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: inherit;
+}
+
+.header__input{
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 630px;
+    z-index: 10;
+}
+
+.header__input input{
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #0f1f29;
+    box-shadow: inset -1px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-family: "proxima-nova",sans-serif;
+    color: #1A3547;
+    animation-delay: .25s;
+    animation-fill-mode: both;
+}
+
+.flipInX{
+    animation: flipInX 0.7s 1 0s 1 normal none;
+}
+
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.section{
+    padding: 50px 20px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.section--controls{
+    background: url(https://placeimg.com/img/bg-2.svg) center center no-repeat;
+    background-size: 1100px;
+}
+
+.section__wrap{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    box-sizing: inherit;
+}
+
+ul{
+    line-height: 1.6;
+}
+
+.controls{
+    margin: 0 -10px;
+    padding-left: 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.controls__item{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 12px 20px;
+    width: 100%;
+    border: 1px solid #CBCBD2;
+    border-radius: 6px;
+    background: #fff;
+    color: #778594;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: text;
+    transition: ease-in-out 0.2s;
+    transition-property: all;
+    user-select: none;
+    box-shadow: inset -1px 1px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
 }
