@@ -37,6 +37,7 @@
         </div>
     </header>
     <!-- Header End -->
+    <!-- Content Start -->
     <section class="section section--controls">
         <div class="section__wrap">
             <ul class="controls">
@@ -67,8 +68,19 @@
                     <a class="toggles__item category" data-group="category" data-cat="tech">Tech</a>
                 </li>
             </ul>
+            <ul class="toggles toggles--filters">
+                <li>
+                    <small>Filters</small>
+                    <a class="toggles__item toggles__item--grayscale filter" data-group="filter" data-cat="grayscale">Grayscale</a>
+                </li>
+                <li>
+                    <a class="toggles__item toggles__item--sepia filter" data-group="filter" data-cat="sepia">Sepia</a>
+                </li>
+            </ul>
+            <button class="button button--center" id="js-generate">Generate The Image</button>
         </div>
     </section>
+    <!-- Content End -->
 </body>
 
 </html>
